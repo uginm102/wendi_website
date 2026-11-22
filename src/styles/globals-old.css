@@ -718,7 +718,7 @@ a:not(.quick-link):hover {
 }
 
 .step-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--c-text-primary);
   margin-bottom: 5px;
