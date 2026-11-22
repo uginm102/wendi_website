@@ -829,29 +829,13 @@ a:not(.quick-link):hover {
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 9/16;
+  aspect-ratio: 9 / 17.6; /* ~10% taller than 9/16 */
   position: relative;
-  padding-bottom: 216.4%;
 }
 
-/* Dynamic island — floats over the screenshot */
+/* Dynamic island — set to none for 9:16 screenshots so it doesn't overlap header/status bar */
 .phone-screen::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 52px;
-  height: 14px;
-  background: #111;
-  border-radius: 20px;
-  z-index: 10;
-  pointer-events: none;
-}
-.phone-screen::before {
-  width: 30px;
-  height: 8px;
-  top: 5px;
+  display: none;
 }
 
 /* Phone frame */
@@ -992,9 +976,6 @@ a:not(.quick-link):hover {
   }
 }
 @media (min-width: 681px) {
-  .step-item:last-child {
-    border-bottom: none;
-  }
   .step-item:hover,
   .step-item:active {
     background: var(--c-bg-secondary, #f7f6f2);

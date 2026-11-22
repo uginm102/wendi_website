@@ -107,9 +107,8 @@ export default function ServiceGuide({
                         currentScreenshot.alternativeText ||
                         `Step ${currentStep + 1}`
                       }
-                      width={280}
-                      height={560}
-                      style={{ width: "100%", height: "auto" }}
+                      fill
+                      sizes="(max-width: 680px) 235px, 370px"
                       priority
                     />
                   </div>

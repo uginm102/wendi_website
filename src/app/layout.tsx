@@ -14,12 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Configure DM Sans
+// Configure DM Sans (Variable font)
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
 });
 
 // Configure DM Serif Display
@@ -29,12 +27,10 @@ const dmSerifDisplay = DM_Serif_Display({
   weight: "400",
 });
 
-// Configure Montserrat
+// Configure Montserrat (Variable font)
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -55,10 +51,6 @@ export async function generateMetadata(): Promise<Metadata> {
       ? rawUrl
       : `${process.env.NEXT_PUBLIC_STRAPI_API_URL || ""}${rawUrl}`
     : "/favicon.ico";
-
-  const logoUrl =
-    process.env.NEXT_PUBLIC_STRAPI_API_URL +
-    (pageData?.header?.logo?.url ?? "/favicon.ico");
 
   return {
     icons: {
