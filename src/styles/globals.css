@@ -451,19 +451,12 @@ ul {
 
 .page-layout {
   display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 24px;
+  grid-template-columns: 1fr 250px;
+  gap: 10px;
   max-width: 1000px;
   margin: 32px auto;
-  padding: 0 24px 48px;
+  padding: 0 0 48px;
   align-items: start;
-}
-
-@media (max-width: 720px) {
-  .page-layout {
-    grid-template-columns: 1fr;
-  }
-  /* .page-aside { order: -1; } */
 }
 
 .page-heading {
@@ -932,7 +925,7 @@ a:not(.quick-link):hover {
   padding: 5px 8px;
   /* margin: 0 -12px; */
   border-radius: var(--radius-md);
-  border-bottom: 0.5px solid var(--orange-light);;
+  border-bottom: 0.5px solid var(--orange);;
   cursor: pointer;
   transition: background 0.2s;
 }
