@@ -9,7 +9,7 @@ import { useRouter, useParams } from "next/navigation";
  * This structure should match your Strapi 'sections.hero-banner' component schema.
  */
 interface HeroBannerProps {
-  title: string; // e.g., "Good Evening! Welcome to I&M Help & Support"
+  title: string; // e.g., "Good Evening! Welcome to Wendi Help & Support"
   searchPlaceholder: string; // e.g., "How can we help?"
   searchButtonText: string; // e.g., "Search"
 }

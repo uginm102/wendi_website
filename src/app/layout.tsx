@@ -64,7 +64,7 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: {
       icon: logoSrc,
     },
-    title: "I&M Bank Help & Support",
+    title: "Wendi Bank Help & Support",
     description: "Developed by Gaman",
   };
 }
