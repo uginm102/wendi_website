@@ -665,9 +665,6 @@ a:not(.quick-link):hover {
   border-bottom: 0.5px solid var(--c-border);
   position: relative;
 }
-.step-item:last-child {
-  border-bottom: none;
-}
 
 .step-num {
   width: 32px;
@@ -928,9 +925,6 @@ a:not(.quick-link):hover {
   border-bottom: 0.5px solid var(--orange);;
   cursor: pointer;
   transition: background 0.2s;
-}
-.steps-list .step-item:last-child {
-  border-bottom: none;
 }
 
 .steps-list .step-item:hover {
