@@ -153,7 +153,7 @@ async function fetchStrapi<T>(
     
     const headers: HeadersInit = { "Content-Type": "application/json" };
     if (STRAPI_TOKEN) headers.Authorization = `Bearer ${STRAPI_TOKEN}`;
-    console.log(`Fetching Strapi endpoint: ${url.toString()}`);
+
     const response = await fetch(url.toString(), {
       method: "GET",
       headers,
@@ -226,7 +226,7 @@ export async function getPopularArticles(
     },
     locale,
   });
-  console.log("Fetched popular articles:", data);
+
   return data ?? null;
 }
 
@@ -272,10 +272,7 @@ export async function searchHelpArticles(
       locale,
     }),
   ]);
-
-  // console.log("Fetched categories:", categories);
-  // console.log("Fetched guides:", guides);
-
+  
   const guidesBySlug = new Map(guides?.map((guide) => [guide.slug, guide]));
   const results = new Map<string, SearchResult>();
 

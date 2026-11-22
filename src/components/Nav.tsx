@@ -20,7 +20,7 @@ export default function Nav({header, lang}: {header?: Header; lang: string}) {
       <Link href={`/${lang}`} className="logo-img">
         <Image
           src={logoSrc}
-          alt="I&M Logo"
+          alt="Wendi Logo"
           style={{ height: "50px", width: "auto", marginTop: "5px" }}
           width={100}
           height={50}

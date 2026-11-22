@@ -2,7 +2,7 @@ import { getPopularArticles } from "@/lib/strapi";
 
 export default async function PopularArticles({ lang }: { lang: string }) {
   const popularArticles = await getPopularArticles(lang);
-  console.log("Popular articles fetched in component:", popularArticles);
+
   return (
     <aside className="page-aside">
       <div className="aside-card">
