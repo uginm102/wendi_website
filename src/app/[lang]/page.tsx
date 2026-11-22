@@ -29,7 +29,7 @@ export default async function SupportPage({ params }: Props) {
       footer: "*", // Populates all first-level fields in your footer component
       links: "*", // Populates all first-level fields in your links component
       guides: "*",
-      popularArticles: "*", // Populates all first-level fields in your popularArticles component
+      // popularArticles: "*", // Populates all first-level fields in your popularArticles component
       mobileAppDownload: "*", // Populates all first-level fields in your mobileAppDownload component
     },
     locale: lang,
